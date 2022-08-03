@@ -77,27 +77,30 @@ void GetInfoUser()
     }
 
 }
-// Informações do Passageiro:
-Passageiro passageiro1 = new Passageiro("Leonardo Oliveira", "example2022@gmail.com", "123456", "+55 (11) 99123-4567");
-List<string> InfoUser1 = passageiro1.GetInfo(passageiro1);
 
-// Informações de um veículo:
-Carro car = new Carro("BRA2O22", "Chevrolet Onix", "Vermelho", "-23.562245, -46.655411");
-List<string> InfoCarro = car.GetInfo(car);
+// Como usar as outras funções:
 
-// Informações do Motorista:
-Motorista motorista1 = new Motorista("João Andrade", "example@gmail.com", "123456@", "55 11 991234567", car, "123 12345-6");
-List<string> InfoUser2 = motorista1.GetInfo(motorista1);
+//// Informações do Passageiro:
+//Passageiro passageiro1 = new Passageiro("Leonardo Oliveira", "example2022@gmail.com", "123456", "+55 (11) 99123-4567");
+//List<string> InfoUser1 = passageiro1.GetInfo(passageiro1);
 
-// Informações de uma corrida:
-Corrida corr = new Corrida("Praça Ramos de Azevedo - República, São Paulo", "Av. Paulista, 1578");
-List<string> InformacoesCorrida = corr.GetInfo(corr);
+//// Informações de um veículo:
+//Carro car = new Carro("BRA2O22", "Chevrolet Onix", "Vermelho", "-23.562245, -46.655411");
+//List<string> InfoCarro = car.GetInfo(car);
 
-var corrida1 = passageiro1.ChamarCorrida("Praça Ramos de Azevedo - República, São Paulo", "Av. Paulista, 1578");
-passageiro1.AvaliarMotorista(motorista1);
+//// Informações do Motorista:
+//Motorista motorista1 = new Motorista("João Andrade", "example@gmail.com", "123456@", "55 11 991234567", car, "123 12345-6");
+//List<string> InfoUser2 = motorista1.GetInfo(motorista1);
 
-motorista1.AceitarCorrida(corrida1);
-motorista1.AvaliarPassageiro(passageiro1);
-motorista1.ConfirmarPagamento(corrida1);
+//// Informações de uma corrida:
+//Corrida corr = new Corrida("Praça Ramos de Azevedo - República, São Paulo", "Av. Paulista, 1578");
+//List<string> InformacoesCorrida = corr.GetInfo(corr);
 
-passageiro1.Alterar(passageiro1, Usuario.Properties.nome, "Leonardo Oliveira dos Santos");
+//var corrida1 = passageiro1.ChamarCorrida("Praça Ramos de Azevedo - República, São Paulo", "Av. Paulista, 1578");
+//passageiro1.AvaliarMotorista(motorista1);
+
+//motorista1.AceitarCorrida(corrida1);
+//motorista1.AvaliarPassageiro(passageiro1);
+//motorista1.ConfirmarPagamento(corrida1);
+
+//passageiro1.Alterar(passageiro1, Usuario.Properties.nome, "Leonardo Oliveira dos Santos");
