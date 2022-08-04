@@ -52,7 +52,7 @@ void GetInfoUser()
         Console.Write("Digite o seu número de telefone: ");
         string _phone = Console.ReadLine();
 
-        Console.WriteLine("Registre seu carro: ");
+        Console.WriteLine("\n>>> Registre seu carro");
         Console.Write("Digite a placa do carro: ");
         string _placa = Console.ReadLine();
         Console.Write("Digite o modelo do carro: ");
@@ -68,8 +68,11 @@ void GetInfoUser()
         // Passageiro de Exemplo
         Passageiro temp_passageiro = new Passageiro("Leonardo Oliveira", "example2022@gmail.com", "123456", "+55 (11) 99123-4567");
 
-        temp_user.AceitarCorrida(corr);
-        temp_user.AvaliarPassageiro(temp_passageiro);
+        bool temp = temp_user.AceitarCorrida(corr);
+        if (temp)
+        {
+            temp_user.AvaliarPassageiro(temp_passageiro);
+        }
     }
     else
     {
